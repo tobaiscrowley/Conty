@@ -42,7 +42,7 @@ PACKAGES=(
 	base-devel git meson mingw-w64-gcc cmake
 	# gaming
 	# extra
- 	obs-studio
+ 	obs-studio qbittorrent signal-desktop
  
 )
 
