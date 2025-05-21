@@ -41,19 +41,21 @@ PACKAGES=(
 	# development
 	base-devel git meson mingw-w64-gcc cmake
 	# gaming
-	lutris python-protobuf steam steam-native-runtime steamtinkerlaunch
-	minigalaxy gamehub legendary prismlauncher bottles playonlinux obs-studio
-	retroarch retroarch-assets-ozone libretro-beetle-psx-hw sunshine
-	libretro-blastem libretro-bsnes libretro-dolphin duckstation
-	libretro-gambatte libretro-melonds libretro-mgba libretro-nestopia
-	libretro-parallel-n64 libretro-picodrive libretro-ppsspp
-	libretro-retrodream libretro-yabause pcsx2-avx-git
+	# lutris python-protobuf steam steam-native-runtime steamtinkerlaunch
+	# minigalaxy gamehub legendary prismlauncher bottles playonlinux obs-studio
+	# retroarch retroarch-assets-ozone libretro-beetle-psx-hw sunshine
+	# libretro-blastem libretro-bsnes libretro-dolphin duckstation
+	# libretro-gambatte libretro-melonds libretro-mgba libretro-nestopia
+	# libretro-parallel-n64 libretro-picodrive libretro-ppsspp
+	# libretro-retrodream libretro-yabause pcsx2-avx-git
 	# extra
 	nano ttf-dejavu ttf-liberation firefox mpv geany pcmanfm
 	htop qbittorrent speedcrunch gpicview file-roller openbox lxterminal
 	yt-dlp minizip nautilus genymotion jre17-openjdk gnome-themes-extra
  	# fork extras
- 	obs-studio qbittorrent signal-desktop
+ 	obs-studio qbittorrent bottles lutris
+  	# signal
+   	signal-desktop alsa-lib at-spi2-core cairo dbus expat gcc-libs glib2 glibc gtk3 hicolor-icon-theme 
  
 )
 
