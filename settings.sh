@@ -19,7 +19,7 @@ PACKAGES=(
 	# development
 	base-devel git meson mingw-w64-gcc cmake
 	# extra
-	ttf-dejavu ttf-liberation firefox mpv
+	ttf-dejavu ttf-liberation mpv
 	htop qbittorrent speedcrunch feh file-roller krusader
 	yt-dlp minizip nautilus
  	# fork extras
@@ -27,7 +27,7 @@ PACKAGES=(
 )
 
 # If you want to install AUR packages, specify them in this variable
-AUR_PACKAGES=(localsend-bin librewolf-bin)
+AUR_PACKAGES=(localsend-bin librewolf-bin ungoogled-chromium)
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
