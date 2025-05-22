@@ -23,7 +23,7 @@ PACKAGES=(
 	htop qbittorrent speedcrunch feh file-roller krusader zip unrar unzip
 	yt-dlp minizip feh
  	# fork extras
- 	obs-studio qbittorrent bottles libreoffice-fresh
+ 	obs-studio qbittorrent bottles jre17-openjdk libreoffice-fresh 
 )
 
 # If you want to install AUR packages, specify them in this variable
