@@ -9,9 +9,9 @@ PACKAGES=(
 	alsa-lib lib32-alsa-lib alsa-plugins lib32-alsa-plugins libpulse
 	lib32-libpulse alsa-tools alsa-utils pipewire lib32-pipewire pipewire-pulse pipewire-jack lib32-pipewire-jack
 	# core
-	xorg-xwayland qt6-wayland wayland lib32-wayland qt5-wayland xorg-server-xephyr gamescope
+	xorg-xwayland qt6-wayland wayland lib32-wayland qt5-wayland xorg-server-xephyr xdg-utils
 	# video
-	mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon
+	mesa lib32-mesa
 	vulkan-intel lib32-vulkan-intel
 	vulkan-icd-loader lib32-vulkan-icd-loader vulkan-mesa-layers
 	lib32-vulkan-mesa-layers libva-intel-driver lib32-libva-intel-driver
@@ -20,8 +20,8 @@ PACKAGES=(
 	base-devel git meson mingw-w64-gcc cmake
 	# extra
 	ttf-dejavu ttf-liberation mpv
-	htop qbittorrent speedcrunch feh file-roller krusader
-	yt-dlp minizip nautilus
+	htop qbittorrent speedcrunch feh file-roller krusader rar zip unrar unzip
+	yt-dlp minizip feh
  	# fork extras
  	obs-studio qbittorrent bottles libreoffice-fresh
 )
@@ -48,29 +48,6 @@ ALHP_FEATURE_LEVEL=2
 LOCALES=(
 	'ar_EG.UTF-8 UTF-8'
 	'en_US.UTF-8 UTF-8'
-	'en_GB.UTF-8 UTF-8'
-	'en_CA.UTF-8 UTF-8'
-	'en_SG.UTF-8 UTF-8'
-	'es_MX.UTF-8 UTF-8'
-	'zh_CN.UTF-8 UTF-8'
-	'fr_FR.UTF-8 UTF-8'
-	'ru_RU.UTF-8 UTF-8'
-	'ru_UA.UTF-8 UTF-8'
-	'es_ES.UTF-8 UTF-8'
-	'de_DE.UTF-8 UTF-8'
-	'pt_BR.UTF-8 UTF-8'
-	'it_IT.UTF-8 UTF-8'
-	'id_ID.UTF-8 UTF-8'
-	'ja_JP.UTF-8 UTF-8'
-	'bg_BG.UTF-8 UTF-8'
-	'pl_PL.UTF-8 UTF-8'
-	'da_DK.UTF-8 UTF-8'
-	'ko_KR.UTF-8 UTF-8'
-	'tr_TR.UTF-8 UTF-8'
-	'hu_HU.UTF-8 UTF-8'
-	'cs_CZ.UTF-8 UTF-8'
-	'bn_IN UTF-8'
-	'hi_IN UTF-8'
 )
 
 # Content of pacman mirrorrlist file before reflector is installed and used to fetch new one
@@ -104,7 +81,7 @@ SQUASHFS_COMPRESSOR_ARGUMENTS=(-b 1M -comp "${SQUASHFS_COMPRESSOR}" -Xcompressio
 #SQUASHFS_COMPRESSOR_ARGUMENTS=(-b 256K -comp "${SQUASHFS_COMPRESSOR}" -Xhc)
 
 # Set to any value to Use DwarFS instead of SquashFS
-USE_DWARFS=
+USE_DWARFS=1
 DWARFS_COMPRESSOR_ARGUMENTS=(
 	-l7 -C zstd:level=19 --metadata-compression null
 	-S 21 -B 1 --order nilsimsa
