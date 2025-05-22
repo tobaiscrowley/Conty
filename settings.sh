@@ -20,7 +20,7 @@ PACKAGES=(
 	base-devel git meson mingw-w64-gcc cmake
 	# extra
 	ttf-dejavu ttf-liberation mpv
-	htop qbittorrent speedcrunch feh file-roller krusader rar zip unrar unzip
+	htop qbittorrent speedcrunch feh file-roller krusader zip unrar unzip
 	yt-dlp minizip feh
  	# fork extras
  	obs-studio qbittorrent bottles libreoffice-fresh
