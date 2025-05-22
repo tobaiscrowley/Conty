@@ -21,13 +21,13 @@ PACKAGES=(
 	# extra
 	ttf-dejavu ttf-liberation mpv wl-clipboard
 	htop qbittorrent speedcrunch feh file-roller krusader zip unrar unzip
-	yt-dlp minizip feh monolith
+	yt-dlp minizip feh monolith kate
  	# fork extras
  	obs-studio qbittorrent bottles jre17-openjdk libreoffice-fresh 
 )
 
 # If you want to install AUR packages, specify them in this variable
-AUR_PACKAGES=(localsend-bin librewolf-bin)
+AUR_PACKAGES=(localsend-bin librewolf-bin ungoogled-chromium-bin)
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
@@ -83,7 +83,7 @@ SQUASHFS_COMPRESSOR_ARGUMENTS=(-b 1M -comp "${SQUASHFS_COMPRESSOR}" -Xcompressio
 # Set to any value to Use DwarFS instead of SquashFS
 USE_DWARFS=1
 DWARFS_COMPRESSOR_ARGUMENTS=(
-	-l7 -C zstd:level=19 --metadata-compression null
+	-l7 -C zstd:level=25 --metadata-compression null
 	-S 21 -B 1 --order nilsimsa
 	-W 12 -w 4 --no-create-timestamp
 )
