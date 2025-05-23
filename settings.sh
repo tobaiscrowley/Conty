@@ -6,24 +6,18 @@
 # packages from the Chaotic-AUR repo
 PACKAGES=(
 	# audio
-	alsa-lib lib32-alsa-lib alsa-plugins lib32-alsa-plugins libpulse
-	lib32-libpulse alsa-tools alsa-utils pipewire lib32-pipewire pipewire-pulse pipewire-jack lib32-pipewire-jack
+	alsa-lib alsa-plugins libpulse alsa-tools alsa-utils pipewire pipewire-pulse pipewire-jack
 	# core
-	xorg-xwayland qt6-wayland wayland lib32-wayland qt5-wayland xorg-server-xephyr xdg-utils
+	xorg-xwayland qt6-wayland wayland qt5-wayland xdg-utils
 	# video
 	mesa lib32-mesa
-	vulkan-intel lib32-vulkan-intel
-	vulkan-icd-loader lib32-vulkan-icd-loader vulkan-mesa-layers
-	lib32-vulkan-mesa-layers libva-intel-driver lib32-libva-intel-driver
-	intel-media-driver mesa-utils vulkan-tools libva-utils lib32-mesa-utils
+	vulkan-intel vulkan-icd-loader vulkan-mesa-layers libva-intel-driver intel-media-driver mesa-utils vulkan-tools libva-utils
 	# development
 	base-devel git meson mingw-w64-gcc cmake
 	# extra
-	ttf-dejavu ttf-liberation mpv wl-clipboard
-	htop qbittorrent speedcrunch feh file-roller krusader zip unrar unzip
-	yt-dlp minizip feh monolith kate
+	ttf-dejavu ttf-liberation mpv wl-clipboard qbittorrent qimgv file-roller krusader zip unrar unzip yt-dlp minizip monolith kate
  	# fork extras
- 	obs-studio qbittorrent bottles jre17-openjdk libreoffice-fresh 
+ 	obs-studio qbittorrent bottles jre17-openjdk libreoffice-fresh cmus
 )
 
 # If you want to install AUR packages, specify them in this variable
@@ -46,7 +40,6 @@ ALHP_FEATURE_LEVEL=2
 
 # Locales to configure in the image
 LOCALES=(
-	'ar_EG.UTF-8 UTF-8'
 	'en_US.UTF-8 UTF-8'
 )
 
@@ -73,7 +66,7 @@ USE_SYS_UTILS=0
 # These are the algorithms supported by the integrated squashfuse
 # However, your squashfs-tools (mksquashfs) may not support some of them
 SQUASHFS_COMPRESSOR="zstd"
-SQUASHFS_COMPRESSOR_ARGUMENTS=(-b 1M -comp "${SQUASHFS_COMPRESSOR}" -Xcompression-level 19)
+SQUASHFS_COMPRESSOR_ARGUMENTS=(-b 1M -comp "${SQUASHFS_COMPRESSOR}" -Xcompression-level 25)
 
 # Uncomment these variables if your mksquashfs does not support zstd or
 # if you want faster compression/decompression (at the cost of compression ratio)
