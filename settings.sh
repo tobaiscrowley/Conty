@@ -74,7 +74,7 @@ SQUASHFS_COMPRESSOR_ARGUMENTS=(-b 1M -comp "${SQUASHFS_COMPRESSOR}" -Xcompressio
 #SQUASHFS_COMPRESSOR_ARGUMENTS=(-b 256K -comp "${SQUASHFS_COMPRESSOR}" -Xhc)
 
 # Set to any value to Use DwarFS instead of SquashFS
-USE_DWARFS=1
+USE_DWARFS=
 DWARFS_COMPRESSOR_ARGUMENTS=(
 	-l7 -C zstd:level=25 --metadata-compression null
 	-S 21 -B 1 --order nilsimsa
