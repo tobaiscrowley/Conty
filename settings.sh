@@ -1,4 +1,4 @@
-2# shellcheck shell=bash disable=2034
+# shellcheck shell=bash disable=2034
 
 # Packages to install
 # You can add packages that you want and remove packages that you don't need
