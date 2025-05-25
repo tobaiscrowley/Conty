@@ -39,9 +39,9 @@ PACKAGES=(
 	openssl-1.1 lib32-openssl-1.1 libnm lib32-libnm
 	cabextract wget gamemode lib32-gamemode mangohud lib32-mangohud
 	# development
-	base-devel git meson mingw-w64-gcc cmake
+	# base-devel git meson mingw-w64-gcc cmake
 	# gaming
-	lutris python-protobuf steam steam-native-runtime steamtinkerlaunch
+	lutris python-protobuf
 	bottles playonlinux obs-studio
 	# extra
 	nano ttf-dejavu ttf-liberation mpv geany pcmanfm
@@ -58,10 +58,12 @@ PACKAGES=(
 # libretro-gambatte libretro-melonds libretro-mgba libretro-nestopia
 # libretro-parallel-n64 libretro-picodrive libretro-ppsspp
 # libretro-retrodream libretro-yabause pcsx2-avx-git
+# steam and deps
+#  steam steam-native-runtime steamtinkerlaunch
 
 
 # If you want to install AUR packages, specify them in this variable
-AUR_PACKAGES=(faugus-launcher-git librewolf-bin)
+AUR_PACKAGES=(faugus-launcher-git librewolf-bin localsend-bin librewolf-extension-tridactyl-bin)
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
