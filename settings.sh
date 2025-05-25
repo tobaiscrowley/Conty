@@ -42,20 +42,26 @@ PACKAGES=(
 	base-devel git meson mingw-w64-gcc cmake
 	# gaming
 	lutris python-protobuf steam steam-native-runtime steamtinkerlaunch
-	minigalaxy gamehub legendary prismlauncher bottles playonlinux obs-studio
-	retroarch retroarch-assets-ozone libretro-beetle-psx-hw sunshine
-	libretro-blastem libretro-bsnes libretro-dolphin duckstation
-	libretro-gambatte libretro-melonds libretro-mgba libretro-nestopia
-	libretro-parallel-n64 libretro-picodrive libretro-ppsspp
-	libretro-retrodream libretro-yabause pcsx2-avx-git
+	bottles playonlinux obs-studio
 	# extra
-	nano ttf-dejavu ttf-liberation firefox mpv geany pcmanfm
+	nano ttf-dejavu ttf-liberation mpv geany pcmanfm
 	htop qbittorrent speedcrunch gpicview file-roller openbox lxterminal
-	yt-dlp minizip nautilus genymotion jre17-openjdk gnome-themes-extra
+	yt-dlp minizip nautilus gnome-themes-extra
 )
 
+# removed pakcages #
+# misc
+# genymotion firefox jre17-openjdk legendary prismlauncher minigalaxy gamehub
+# emulation 
+# retroarch retroarch-assets-ozone libretro-beetle-psx-hw sunshine
+# libretro-blastem libretro-bsnes libretro-dolphin duckstation
+# libretro-gambatte libretro-melonds libretro-mgba libretro-nestopia
+# libretro-parallel-n64 libretro-picodrive libretro-ppsspp
+# libretro-retrodream libretro-yabause pcsx2-avx-git
+
+
 # If you want to install AUR packages, specify them in this variable
-AUR_PACKAGES=(faugus-launcher-git)
+AUR_PACKAGES=(faugus-launcher-git librewolf-bin)
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
