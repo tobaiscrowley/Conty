@@ -46,7 +46,7 @@ PACKAGES=(
 	# extra
 	nano ttf-dejavu ttf-liberation mpv geany pcmanfm
 	htop qbittorrent speedcrunch gpicview file-roller openbox lxterminal
-	yt-dlp minizip nautilus gnome-themes-extra
+	yt-dlp minizip nautilus gnome-themes-extra wl-clipboard
 )
 
 # removed pakcages #
