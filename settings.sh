@@ -44,26 +44,24 @@ PACKAGES=(
 	lutris python-protobuf
 	bottles playonlinux obs-studio
 	# extra
-	nano ttf-dejavu ttf-liberation mpv geany pcmanfm
-	htop qbittorrent speedcrunch gpicview file-roller openbox lxterminal
-	yt-dlp minizip nautilus gnome-themes-extra wl-clipboard
+	ttf-dejavu ttf-liberation pcmanfm feh
+	htop qbittorrent speedcrunch gpicview file-roller lxterminal minizip 
+	
 )
 
 # removed pakcages #
-# misc
 # genymotion firefox jre17-openjdk legendary prismlauncher minigalaxy gamehub
-# emulation 
 # retroarch retroarch-assets-ozone libretro-beetle-psx-hw sunshine
 # libretro-blastem libretro-bsnes libretro-dolphin duckstation
 # libretro-gambatte libretro-melonds libretro-mgba libretro-nestopia
 # libretro-parallel-n64 libretro-picodrive libretro-ppsspp
 # libretro-retrodream libretro-yabause pcsx2-avx-git
-# steam and deps
-#  steam steam-native-runtime steamtinkerlaunch
+# steam steam-native-runtime steamtinkerlaunch
+# yt-dlp nautilus gnome-themes-extra openbox nano mpv geany
 
 
 # If you want to install AUR packages, specify them in this variable
-AUR_PACKAGES=(faugus-launcher-git librewolf-bin localsend-bin librewolf-extension-tridactyl-bin)
+AUR_PACKAGES=(faugus-launcher-git ungoogled-chromium-bin localsend-bin)
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
