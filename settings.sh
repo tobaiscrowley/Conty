@@ -45,8 +45,8 @@ PACKAGES=(
 	bottles playonlinux obs-studio
 	# extra
 	ttf-dejavu ttf-liberation pcmanfm feh
-	htop qbittorrent speedcrunch gpicview file-roller lxterminal minizip 
-	
+	htop qbittorrent speedcrunch gpicview file-roller lxterminal minizip
+	signal-desktop inkscape
 )
 
 # removed pakcages #
