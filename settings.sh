@@ -42,11 +42,11 @@ PACKAGES=(
 	# base-devel git meson mingw-w64-gcc cmake
 	# gaming
 	lutris python-protobuf
-	bottles playonlinux obs-studio
+	bottles playonlinux 
 	# extra
 	ttf-dejavu ttf-liberation pcmanfm feh
 	htop qbittorrent speedcrunch gpicview file-roller lxterminal minizip
-	signal-desktop inkscape
+	signal-desktop inkscape 
 )
 
 # removed pakcages #
@@ -57,11 +57,11 @@ PACKAGES=(
 # libretro-parallel-n64 libretro-picodrive libretro-ppsspp
 # libretro-retrodream libretro-yabause pcsx2-avx-git
 # steam steam-native-runtime steamtinkerlaunch
-# yt-dlp nautilus gnome-themes-extra openbox nano mpv geany
+# yt-dlp nautilus gnome-themes-extra openbox nano mpv geany obs-studio
 
 
 # If you want to install AUR packages, specify them in this variable
-AUR_PACKAGES=(faugus-launcher-git ungoogled-chromium-bin localsend-bin)
+AUR_PACKAGES=(vesktop-bin ungoogled-chromium-bin localsend-bin)
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
