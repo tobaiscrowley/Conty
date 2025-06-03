@@ -41,12 +41,11 @@ PACKAGES=(
 	# development
 	# base-devel git meson mingw-w64-gcc cmake
 	# gaming
-	lutris python-protobuf
-	bottles playonlinux 
+	lutris python-protobuf playonlinux 
 	# extra
 	ttf-dejavu ttf-liberation pcmanfm feh
 	htop qbittorrent speedcrunch gpicview file-roller lxterminal minizip
-	signal-desktop inkscape 
+	signal-desktop inkscape dbus 
 )
 
 # removed pakcages #
@@ -57,7 +56,7 @@ PACKAGES=(
 # libretro-parallel-n64 libretro-picodrive libretro-ppsspp
 # libretro-retrodream libretro-yabause pcsx2-avx-git
 # steam steam-native-runtime steamtinkerlaunch
-# yt-dlp nautilus gnome-themes-extra openbox nano mpv geany obs-studio
+# yt-dlp nautilus gnome-themes-extra openbox nano mpv geany obs-studio bottles
 
 
 # If you want to install AUR packages, specify them in this variable
